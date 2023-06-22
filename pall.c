@@ -5,17 +5,17 @@
  * @counter: no used
  * Return: no return
 */
-void ft_pall(stack_t **head, unsigned int counter)
+void f_pall(stack_t **head, unsigned int counter)
 {
-	stack_t *ptr;
+	stack_t *h;
 	(void)counter;
 
-	ptr = *head;
-	if (ptr == NULL)
+	h = *head;
+	if (h == NULL)
 		return;
-	while (ptr)
+	while (h)
 	{
-		printf("%d\n", ptr->a);
-		ptr = ptr->next;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
 }
